@@ -3,10 +3,11 @@ import styled from 'styled-components'
 import SearchIcon from '@mui/icons-material/Search';
 import Badge from '@mui/material/Badge';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-
+import {mobile} from "../responsive.js"
 
 const Container = styled.div`
     height: 60px;
+    ${mobile({height: "50px"})}
 `
 
 const Wrapper = styled.div`
@@ -14,17 +15,20 @@ const Wrapper = styled.div`
     display:flex;
     align-items: center;
     justify-content: space-between;
+    ${mobile({display: "flex"})}
 `
 
 const Izquierda = styled.div`
     flex:1;
     display: flex;
     align-items: center;
+    ${mobile({width:"100%"})}
 `;
 
 const Lenguaje = styled.span`
     font-size: 15px;
     cursor: pointer;
+    ${mobile({display: "none"})}
 `;
 
 const SearchContainer = styled.div`
@@ -36,7 +40,8 @@ const SearchContainer = styled.div`
     padding-top: 3px;
 `
 const Input = styled.input`
-    border:none;
+    border: none;
+    ${mobile({width: "50px"})}
 `
 
 const Centro = styled.div`
@@ -46,9 +51,8 @@ const Centro = styled.div`
 
 const Logo = styled.h1`
     font-size: 40px;
+    ${mobile({fontSize: "15px", paddingLeft: "5px;"})}
 `
-
-
 
 const Derecha = styled.div`
     flex:1;
@@ -56,13 +60,14 @@ const Derecha = styled.div`
     align-items: center;
     justify-content:flex-end;
     padding-right: 10px;
+    ${mobile({flex: 3, justifyContent: "center"})}
 `;
 
 const MenuItem = styled.div`
     font-size:14px;
     cursor: pointer;
     margin: 25px;
-
+    ${mobile({fontSize: "12px", marginLeft:"10px"})}
 `
 
 const NavBar = () => {
@@ -72,12 +77,12 @@ const NavBar = () => {
                 <Izquierda>
                     <Lenguaje>ES</Lenguaje>
                     <SearchContainer>
-                        <Input/>
+                        <Input placeholder="buscar"/>
                         <SearchIcon style={{color: "gray", fontSize:20}}/>
                     </SearchContainer>
                 </Izquierda>
                 <Centro>
-                    <Logo>DITANO BEBIDAS</Logo>
+                    <Logo>DITANO.B.</Logo>
                 </Centro>
                 <Derecha>
                     <MenuItem>REGISTRARSE</MenuItem>

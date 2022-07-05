@@ -6,9 +6,11 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 import RoomIcon from '@mui/icons-material/Room';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+import {mobile} from "../responsive"
 
 const Container = styled.div`
     display:flex;
+    ${mobile({flexDirection: "column"})}
 `
 const Left = styled.div`
     flex: 1;
@@ -42,6 +44,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
     flex: 1; 
     padding: 20px;
+    ${mobile({display: "none"})}
 `
 const Title = styled.h3`
     margin-bottom; 30px;
@@ -61,16 +64,23 @@ const ListItem = styled.li`
 const Right = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({backgroundColor: "lightgray"})}
 `
-const ContactItem = styled.div``
+const ContactItem = styled.div`
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+`
 
-const Pago = styled.img``
+const Pago = styled.img`
+
+`
 
 const Footer = () => {
   return (
     <Container>
         <Left>
-            <Logo>DITANO BEBIDAS</Logo>
+            <Logo>DITANO.B.</Logo>
             <Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laudantium pariatur soluta harum exercitationem? Aperiam corporis ea eos reiciendis cumque!</Desc>
             <SocialContainer>
                 <SocialIcon color="3B5999">
@@ -98,11 +108,11 @@ const Footer = () => {
             </List>
         </Center>
         <Right>
-            <Title>Contacto</Title>
-            <ContactItem><RoomIcon/>Calle falsa 123</ContactItem>
-            <ContactItem><PhoneIcon/>+011 15 1234 5679</ContactItem>
-            <ContactItem><EmailIcon/>contacto@ditanobebidas.com</ContactItem>
-            <Pago></Pago>
+                <Title>Contacto</Title>
+                <ContactItem><RoomIcon style={{marginRight:"10px"}}/>Calle falsa 123</ContactItem>
+                <ContactItem><PhoneIcon style={{marginRight:"10px"}}/>+011 15 1234 5679</ContactItem>
+                <ContactItem><EmailIcon style={{marginRight:"10px"}}/>contacto@ditano.b.com</ContactItem>
+            <Pago src="https://i.ibb.co/Qfvn4z6/payment.png"></Pago>
         </Right>
 
     </Container>

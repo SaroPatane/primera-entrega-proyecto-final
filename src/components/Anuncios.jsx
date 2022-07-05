@@ -1,13 +1,13 @@
 import styled from "styled-components"
 
+
 const Container = styled.div`
     height: 30px;
     background: linear-gradient(to right, black, gray);
     color: white;
-    padding-top: 8px;
+    padding-top: 11px;
     padding-left: 25px;
 `
-
 const Anuncios = () => {
   return (
     <Container>
