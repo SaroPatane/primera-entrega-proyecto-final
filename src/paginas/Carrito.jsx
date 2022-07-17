@@ -11,7 +11,7 @@ const Container = styled.div`
 `
 const Wrapper = styled.div`
     padding: 20px;
-    ${mobile({padding:"10px"})}
+    ${mobile({padding:"65px"})}
 `
 
 const Title = styled.h1`
@@ -55,6 +55,7 @@ const Bottom = styled.div`
 
 const Info = styled.div`
     flex: 3;
+    ${mobile({paddingRight: "30px"})}
 `
 
 const Product = styled.div`
@@ -117,7 +118,6 @@ const Summary = styled.div`
     border-radius: 10px;
     padding: 20px;
     height: 50vh;
-
 `
 const SummaryTitle = styled.h1`
     font-weight: 200;

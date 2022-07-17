@@ -48,7 +48,7 @@ const Button =styled.button`
 const Newsletter = () => {
   return (
     <Container>
-        <Title>Newsletter</Title>
+        <Title>Cuentanos algo</Title>
         <Desc>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, tenetur.</Desc>
         <InputContainer>
             <Input placeholder="Your email"/>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-
+import {mobile} from "../responsive"
 
 const Info= styled.div`
     opacity: 0;
@@ -30,7 +30,7 @@ const Container= styled.div`
     justify-content: center;
     background-color: white;
     position: relative;
-    
+
     &:hover ${Info}{
         opacity:0.8;
     }

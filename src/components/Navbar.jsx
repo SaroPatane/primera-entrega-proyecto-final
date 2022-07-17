@@ -7,7 +7,7 @@ import {mobile} from "../responsive.js"
 
 const Container = styled.div`
     height: 60px;
-    ${mobile({height: "50px"})}
+    ${mobile({height: "60px", width: "200px"})}
 `
 
 const Wrapper = styled.div`
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
     display:flex;
     align-items: center;
     justify-content: space-between;
-    ${mobile({display: "flex"})}
+    ${mobile({padding: "0px 10px"})}
 `
 
 const Izquierda = styled.div`
@@ -41,7 +41,7 @@ const SearchContainer = styled.div`
 `
 const Input = styled.input`
     border: none;
-    ${mobile({width: "50px"})}
+    ${mobile({width: "50px", paddingLeft: "10px"})}
 `
 
 const Centro = styled.div`
@@ -51,7 +51,7 @@ const Centro = styled.div`
 
 const Logo = styled.h1`
     font-size: 40px;
-    ${mobile({fontSize: "15px", paddingLeft: "5px;"})}
+    ${mobile({fontSize: "15px", paddingLeft: "15px"})}
 `
 
 const Derecha = styled.div`
@@ -60,7 +60,7 @@ const Derecha = styled.div`
     align-items: center;
     justify-content:flex-end;
     padding-right: 10px;
-    ${mobile({flex: 3, justifyContent: "center"})}
+    ${mobile({flex: 2, justifyContent: "center"})}
 `;
 
 const MenuItem = styled.div`
@@ -82,7 +82,7 @@ const NavBar = () => {
                     </SearchContainer>
                 </Izquierda>
                 <Centro>
-                    <Logo>DITANO.B.</Logo>
+                    <Logo>DITANO B.</Logo>
                 </Centro>
                 <Derecha>
                     <MenuItem>REGISTRARSE</MenuItem>

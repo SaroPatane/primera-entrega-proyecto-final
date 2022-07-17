@@ -80,7 +80,7 @@ const Footer = () => {
   return (
     <Container>
         <Left>
-            <Logo>DITANO.B.</Logo>
+            <Logo>DITANO B.</Logo>
             <Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laudantium pariatur soluta harum exercitationem? Aperiam corporis ea eos reiciendis cumque!</Desc>
             <SocialContainer>
                 <SocialIcon color="3B5999">

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import {mobile} from "../responsive"
 
 const Container = styled.div`
     height: 30px;
@@ -7,6 +7,7 @@ const Container = styled.div`
     color: white;
     padding-top: 11px;
     padding-left: 25px;
+    ${mobile({width: "100%", paddingLeft: "10px", fontSize: "15px"})}
 `
 const Anuncios = () => {
   return (
